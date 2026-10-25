@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MENSWEAR | Premium Apparel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">URBAN<span>MAN</span></div>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#products">Jackets</a>
+      <a href="#products">Shirts</a>
+      <a href="#products">Suits</a>
+      <a href="#products">Blazers</a>
+      <a href="#products">Festive Wear</a>
+
+      <a href="#products">New Arrivals</a>
+    </nav>
+    <div class="cart-btn">
+      🛒 Cart (<span id="cart-count">0</span>)
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>ELEVATE YOUR STYLE</h1>
+      <p>Discover premium jackets, sharp shirts, and tailored menswear for every occasion.</p>
+      <a href="#products" class="shop-now-btn">Explore Collection</a>
+    </div>
+  </section>
+
+  <!-- Product Section -->
+  <main id="products" class="container">
+    <h2>Featured Men's Apparel</h2>
+    
+    <div class="product-grid">
+      
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500&auto=format&fit=crop" alt="Classic Biker Leather Jacket">
+        <div class="product-info">
+          <p class="category">Outerwear</p>
+          <h3>Classic Biker Leather Jacket</h3>
+          <div class="price-row">
+            <span class="price">₹4,999</span>
+            <button class="add-cart-btn" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=500&auto=format&fit=crop" alt="Slim-Fit Cotton Oxford Shirt">
+        <div class="product-info">
+          <p class="category">Shirts</p>
+          <h3>Slim-Fit Oxford Cotton Shirt</h3>
+          <div class="price-row">
+            <span class="price">₹1,799</span>
+            <button class="add-cart-btn" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=500&auto=format&fit=crop" alt="Tailored Charcoal Blazer">
+        <div class="product-info">
+          <p class="category">Suits & Blazers</p>
+          <h3>Tailored Charcoal Suit Blazer</h3>
+          <div class="price-row">
+            <span class="price">₹5,499</span>
+            <button class="add-cart-btn" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+
+     <!-- Product 4 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1618886614638-80e3c103d31a?w=500&auto=format&fit=crop" alt="Black Blazer">
+        <div class="product-info">
+          <p class="category">Blazer</p>
+          <h3>Black Blazer</h3>
+          <div class="price-row">
+            <span class="price">₹2,199</span>
+            <button class="add-cart-btn" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?q=80&w=687&auto=format&fit=crop" alt="Cool Blazers">
+      <div class="product-info">
+          <p class="category">Blazers</p>
+          <h3>Cool Blazers</h3>
+          <div class="price-row">
+            <span class="price">₹1,499</span>
+            <button class="add-cart-btn" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+      </div> 
+
+      <!-- Product 6 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1774267230662-575d1f4ec1bd?w=500&auto=format&fit=crop" alt="Festive wear">
+        <div class="product-info">
+          <p class="category">Festive Wear</p>
+          <h3>Festive wear</h3>
+          <div class="price-row">
+            <span class="price">₹2,499</span>
+            <button class="add-cart-btn" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1785671677299-85174f093cdc?w=500&auto=format&fit=crop" alt="Festive wear">
+        <div class="product-info">
+          <p class="category">Festive Wear</p>
+          <h3>Festive wear</h3>
+          <div class="price-row">
+            <span class="price">₹2,999</span>
+            <button class="add-cart-btn" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+   </div>
+  </main>
+
+ <script>
+    let itemCount = 0;
+    function addToCart() {
+      itemCount++;
+      document.getElementById('cart-count').innerText = itemCount;
+    }
+  </script>
+</body>
+</html>
